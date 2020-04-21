@@ -287,6 +287,7 @@ section p {
 
 
 }
+
 .block-info_social a:first-child:before {
     content: "\f0d5";
     display: inline-block;
@@ -296,15 +297,12 @@ section p {
 }
 
 
-
 .block-info_social a:nth-child(2):before {
-    /*display: inline-block;*/
     font-family: "Font Awesome 5 Brands", sans-serif;
     content: "\f099";
 }
 
 .block-info_social a:last-child:before {
-    /*display: inline-block;*/
     font-family: "Font Awesome 5 Brands", sans-serif;
     content: "\f39e";
 
@@ -354,6 +352,11 @@ section p {
     background-color: #f7f7f7;
     padding: 94px 0;
     text-align: center;
+    position: relative;
+}
+.reviews-box{
+    max-width: 889px;
+    margin: auto;
 }
 
 .reviews h3 {
@@ -372,16 +375,60 @@ section p {
     height: 3px;
     width: 63px;
     background-color: #24282f;
-    margin: auto;
     margin-top: 23px;
     text-transform: uppercase;
+    position: relative;
+    left: 46%;
 }
 
+.reviews-foto {
+    max-width: 72px;
+    max-height: 72px;
+    margin: auto;
+}
+
+
+
+.owl-nav .owl-prev:before {
+    content: "\f104";
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    width: 9px;
+    height: 13px;
+    color: #24282f;
+    font-size: 22px;
+    line-height: 18.96px;
+    text-transform: uppercase;
+    letter-spacing: 1.68px;
+    position: absolute;
+    left: 0;
+    top: 135px;
+}
+
+.owl-nav .owl-next:after {
+    content: "\f105";
+    width: 9px;
+    height: 13px;
+    color: #24282f;
+    font-size: 22px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    line-height: 18.96px;
+    text-transform: uppercase;
+    letter-spacing: 1.68px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 135px;
+
+}
 .reviews p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 11px;
     color: #000000;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    font-family: 'Open Sans', sans-serif;
     margin: 31px 0 36px;
     line-height: 19px;
 }
@@ -402,6 +449,7 @@ section p {
     color: #000000;
 
 }
+
 
 .infirmations {
     background-color: #2b2f35;
@@ -469,7 +517,7 @@ section p {
 }
 
 
-button {
+.form-froup_button {
     background-color: transparent;
     padding-bottom: 25px;
     padding-top: 10px;
@@ -483,7 +531,7 @@ button {
     border: solid 1px #47463e;
 }
 
-button:hover {
+.form-froup_button:hover {
     background-color: #b5a263;
 }
 
@@ -531,7 +579,6 @@ footer a {
     color: #6e7279;
     text-decoration: none;
     /*line-height: 28px;*/
-
 
 
 }
