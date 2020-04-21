@@ -352,12 +352,10 @@ section p {
     background-color: #f7f7f7;
     padding: 94px 0;
     text-align: center;
-    /*position: relative;*/
+    position: relative;
 }
-/*.reviews-box{*/
-/*    max-width: 889px;*/
-/*    margin: auto;*/
-/*}*/
+
+
 
 .reviews h3 {
     font-family: 'Raleway', sans-serif;
@@ -369,24 +367,24 @@ section p {
 
 }
 
-.reviews h3:after {
+.reviews h3:after{
     content: "";
     display: block;
     height: 3px;
     width: 63px;
     background-color: #24282f;
-    margin-top: 23px;
+    /*margin-top: 23px;*/
     text-transform: uppercase;
-    position: relative;
+    /*margin: auto;*/
+    position: absolute;
     left: 46%;
+   top: 40px;
 }
-
 .reviews-foto {
     max-width: 72px;
     max-height: 72px;
     margin: auto;
 }
-
 
 
 .owl-nav .owl-prev:before {
@@ -402,7 +400,7 @@ section p {
     text-transform: uppercase;
     /*letter-spacing: 1.68px;*/
     position: absolute;
-    left: 2px;
+    left: 0px;
     top: 135px;
 }
 
@@ -419,10 +417,11 @@ section p {
     /*letter-spacing: 1.68px;*/
     display: block;
     position: absolute;
-    right: 2px;
+    right: 0px;
     top: 135px;
 
 }
+
 .reviews p {
     color: #000000;
     font-size: 11px;
@@ -431,6 +430,7 @@ section p {
     font-family: 'Open Sans', sans-serif;
     margin: 31px 0 36px;
     line-height: 19px;
+    letter-spacing: 0.7px;
 }
 
 .reviews h4 {
@@ -453,11 +453,16 @@ section p {
 
 .infirmations {
     background-color: #2b2f35;
-    padding-top: 62px;
-    padding-bottom: 35px;
+    padding: 62px 0 35px;
     border-top: solid 1px #8b8d90;
 }
-
+.infirmations-box{
+    max-width: 890px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .infirmations h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -468,38 +473,35 @@ section p {
 }
 
 
+
 .infirmations p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #6e7279;
     margin-top: 25px;
+    font-weight: 400;
+    line-height: 18.96px;
+    letter-spacing: 0.35px;
 
 }
 
-
-.about {
-    float: left;
-    margin-right: 135px;
-    width: 232px;
+.about, .contact, .form-froup{
+    width: 28%;
 }
 
-.contact {
-    float: left;
-    margin-right: 124px;
-    width: 160px;
-}
+/*.about {*/
+/*    width: 231px;*/
+/*}*/
 
-.form-froup {
-    float: right;
-    width: 237px;
-}
+/*.form-froup {*/
+/*    width: 237px;*/
+/*}*/
 
-.infirmations .box {
-    content: "";
-    display: block;
-    clear: both;
-}
+/*.contact {*/
+/*    width: 161px;*/
+/*}*/
+
 
 .form-froup_imput input {
     width: 100%;
@@ -536,31 +538,18 @@ section p {
 }
 
 
-@media (max-width: 1006px) {
-    .infirmations .container {
-        text-align: center;
-    }
-
-    .infirmations .form-froup, .contact, .about {
-        margin: auto;
-        float: none;
-        display: block;
-
-
-    }
-}
-
 footer {
     background-color: #24282f;
     padding: 24px 0;
     border: solid 1px #42464c;
 }
-.footer-box{
+
+.footer-box {
     max-width: 889px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-   align-self: auto;
+    align-self: auto;
     flex-wrap: wrap;
 }
 
@@ -588,7 +577,8 @@ footer p {
 
 
 }
-.footer-social a:first-child:before{
+
+.footer-social a:first-child:before {
 
     content: "\f39e";
     display: inline-block;
@@ -596,7 +586,8 @@ footer p {
 
 
 }
-.footer-social a:nth-child(2):before{
+
+.footer-social a:nth-child(2):before {
 
     content: "\f099";
     display: inline-block;
@@ -604,7 +595,8 @@ footer p {
 
 
 }
-.footer-social a:nth-child(3):before{
+
+.footer-social a:nth-child(3):before {
 
     content: "\f0d5";
     display: inline-block;
@@ -612,7 +604,8 @@ footer p {
 
 
 }
-.footer-social a:last-child:before{
+
+.footer-social a:last-child:before {
 
     content: "\f17d";
     display: inline-block;
@@ -620,11 +613,6 @@ footer p {
 
 
 }
-
-
-
-
-
 
 
 footer a:hover {

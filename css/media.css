@@ -1,6 +1,9 @@
 @media only screen and (max-width: 768px){
-    .footer-box{
-        padding: 15px;
+    .footer-box, .infirmations-box {
+        padding:  0 15px ;
+    }
+    .reviews{
+        padding: 30px 15px 0;
     }
 
 
@@ -14,6 +17,19 @@
       text-align: center;
       line-height: 50px;
   }
+    .about, .contact{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .form-froup{
+        width: 75%;
+        margin: auto;
+    }
+.infirmations-box{
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
 
 
 
