@@ -352,12 +352,12 @@ section p {
     background-color: #f7f7f7;
     padding: 94px 0;
     text-align: center;
-    position: relative;
+    /*position: relative;*/
 }
-.reviews-box{
-    max-width: 889px;
-    margin: auto;
-}
+/*.reviews-box{*/
+/*    max-width: 889px;*/
+/*    margin: auto;*/
+/*}*/
 
 .reviews h3 {
     font-family: 'Raleway', sans-serif;
@@ -398,11 +398,11 @@ section p {
     height: 13px;
     color: #24282f;
     font-size: 22px;
-    line-height: 18.96px;
+    /*line-height: 18.96px;*/
     text-transform: uppercase;
-    letter-spacing: 1.68px;
+    /*letter-spacing: 1.68px;*/
     position: absolute;
-    left: 0;
+    left: 2px;
     top: 135px;
 }
 
@@ -414,12 +414,12 @@ section p {
     font-size: 22px;
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
-    line-height: 18.96px;
+    /*line-height: 18.96px;*/
     text-transform: uppercase;
-    letter-spacing: 1.68px;
+    /*letter-spacing: 1.68px;*/
     display: block;
     position: absolute;
-    right: 0;
+    right: 2px;
     top: 135px;
 
 }
@@ -552,9 +552,16 @@ section p {
 
 footer {
     background-color: #24282f;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
     border: solid 1px #42464c;
+}
+.footer-box{
+    max-width: 889px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   align-self: auto;
+    flex-wrap: wrap;
 }
 
 footer p {
@@ -562,11 +569,10 @@ footer p {
     font-weight: 400;
     color: #6e7279;
     font-size: 12px;
-    float: left;
+    line-height: 28px;
 }
 
-footer a {
-    float: right;
+.footer-social a {
     margin-left: 8px;
     width: 28px;
     height: 28px;
@@ -578,21 +584,47 @@ footer a {
     font-size: 14px;
     color: #6e7279;
     text-decoration: none;
-    /*line-height: 28px;*/
-
-
-}
-
-.fa-dribbble, .fa-google-plus-g, .fa-twitter, .fa-facebook-f {
     line-height: 28px;
 
+
+}
+.footer-social a:first-child:before{
+
+    content: "\f39e";
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands", sans-serif;
+
+
+}
+.footer-social a:nth-child(2):before{
+
+    content: "\f099";
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands", sans-serif;
+
+
+}
+.footer-social a:nth-child(3):before{
+
+    content: "\f0d5";
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands", sans-serif;
+
+
+}
+.footer-social a:last-child:before{
+
+    content: "\f17d";
+    display: inline-block;
+    font-family: "Font Awesome 5 Brands", sans-serif;
+
+
 }
 
-footer .box {
-    content: "";
-    display: block;
-    clear: both;
-}
+
+
+
+
 
 
 footer a:hover {
