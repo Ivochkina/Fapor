@@ -98,6 +98,11 @@ header {
     max-width: 1100px;
     margin: auto;
 }
+header .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 header nav ul {
     list-style: none;
@@ -134,10 +139,9 @@ header nav ul li a {
     letter-spacing: 1px;
 }
 
-header .logo {
+ .logo a {
     font-family: 'Nexa', sans-serif;
     font-style: normal;
-
     color: #ffffff;
     font-size: 21px;
     font-weight: 400;
@@ -149,15 +153,9 @@ header .logo {
 }
 
 
-header nav {
-    float: right;
-}
 
-.container:after {
-    clear: both;
-    content: "";
-    display: block;
-}
+
+
 
 
 section {
